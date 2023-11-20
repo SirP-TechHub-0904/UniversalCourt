@@ -1,0 +1,312 @@
+﻿@page
+@using UniversalCourt.Application.Services;
+
+
+@model UniversalCourt.Website.Areas.Admin.Pages.Dashboard.IndexModel
+@{
+}
+<!-- Small boxes (Stat box) -->
+
+@if (Model.Custom == true)
+{
+    foreach (var item in Model.DashboardDatas)
+    {
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    @item.Title
+                </h3>
+
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <div class="row">
+                    @foreach (var xdata in item.DashboardDataLists)
+                    {
+                        if (xdata.DataIdQuery == 0)
+                        {
+                            <div class="col-lg-3 col-6 dashboard-1">
+                                @{ var itemlist = Model.DataListMain.FirstOrDefault(x => x.DataTitle == "USERS"); }
+                                <a asp-page="/UserManagement/Index" asp-area="Admin">
+
+                                    <!-- small box -->
+                                    <div class="small-box @itemlist.DataColor">
+                                        <div class="inner">
+                                            <h3>@itemlist.DataCount</h3>
+
+                                            <p>TOTAL STAFF</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6 dashboard-1">
+                                @{ var itemlistX = Model.DataListMain.FirstOrDefault(x => x.DataTitle == "MALES"); }
+                                <a asp-page="/UserManagement/Index" asp-area="Admin">
+
+                                    <!-- small box -->
+                                    <div class="small-box @itemlistX.DataColor">
+                                        <div class="inner">
+                                            <h3>@itemlistX.DataCount</h3>
+
+                                            <p>TOTAL MALES</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6 dashboard-1">
+                                @{ var itemlistXF = Model.DataListMain.FirstOrDefault(x => x.DataTitle == "FEMALES"); }
+                                <a asp-page="/UserManagement/Index" asp-area="Admin">
+
+                                    <!-- small box -->
+                                    <div class="small-box @itemlistXF.DataColor">
+                                        <div class="inner">
+                                            <h3>@itemlistXF.DataCount</h3>
+
+                                            <p>TOTAL FEMALES</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        }
+
+                        if (xdata.DataIdQuery == 000)
+                        {
+                            <div class="col-lg-3 col-6 dashboard-1">
+                                @{ var itemlist = Model.DataListDto.FirstOrDefault(x => x.DataTitle == "CLIENT REQUEST"); }
+
+                                <a asp-page="/IRequest/Index" asp-area="Admin">
+                                    <!-- small box -->
+                                    <div class="small-box @itemlist.DataColor">
+                                        <div class="inner">
+                                            <h3>@itemlist.DataCount</h3>
+
+                                            <p>TOTAL @itemlist.DataTitle</p>
+                                        </div>
+
+
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            @await Component.InvokeAsync("DashboardData", new { data = xdata.DataIdQuery, color = MainServices.SelectColor() })
+                        }
+                    }
+                    @if (item.UseAccounts == true)
+                    {
+                        @foreach (var xdata in Model.UserAccountDashboard)
+                        {
+
+                            <div class="col-lg-3 col-6 dashboard-1">
+                                <a asp-page="/CH/Index" asp-area="Admin" asp-route-id="@xdata.DataArea">
+                                    <div class="small-box @xdata.DataColor">
+                                        <div class="inner">
+                                            <h3>@xdata.DataCount</h3>
+                                            <p>TOTAL @xdata.DataTitle</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                        }
+                    }
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    }
+}
+else
+{
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+                STATISTICS
+            </h3>
+
+            <div class="card-tools d-inline">
+
+                <button type="button" class="btn btn-primary btn-sm d-inline" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <!-- Dropdown button -->
+                <div class="btn-group d-inline">
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort By
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">By Day</a>
+                        <a class="dropdown-item" href="#">By Week</a>
+                        <a class="dropdown-item" href="#">By Month</a>
+                        <a class="dropdown-item" href="#">By Year</a>
+                        <!-- Add more options as needed -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <div class="row">
+                @foreach (var data in Model.DataListDto)
+                {
+                    <div class="col-lg-3 col-6 dashboard-1">
+                        <!-- small box -->
+                        <div class="small-box @data.DataColor">
+                            <div class="inner">
+                                <h3>@data.DataCount</h3>
+
+                                <p>@data.DataTitle</p>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+                STATISTICS
+            </h3>
+
+            <div class="card-tools d-inline">
+
+                <button type="button" class="btn btn-primary btn-sm d-inline" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <!-- Dropdown button -->
+                <div class="btn-group d-inline">
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort By
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">By Day</a>
+                        <a class="dropdown-item" href="#">By Week</a>
+                        <a class="dropdown-item" href="#">By Month</a>
+                        <a class="dropdown-item" href="#">By Year</a>
+                        <!-- Add more options as needed -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <div class="row">
+                @foreach (var data in Model.DataListMain)
+                {
+                    <div class="col-lg-3 col-6 dashboard-1">
+                        <!-- small box -->
+                        <div class="small-box @data.DataColor">
+                            <div class="inner">
+                                <h3>@data.DataCount</h3>
+
+                                <p>@data.DataTitle</p>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+}
+<!--<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+
+                </h3>
+
+                <div class="card-tools d-inline">
+
+                    <button type="button" class="btn btn-primary btn-sm d-inline" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>-->
+<!-- Dropdown button -->
+<!--<div class="btn-group d-inline">
+    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort By
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">By Day</a>
+        <a class="dropdown-item" href="#">By Week</a>
+        <a class="dropdown-item" href="#">By Month</a>
+        <a class="dropdown-item" href="#">By Year</a>-->
+<!-- Add more options as needed -->
+<!--</div>
+        </div>
+
+    </div>
+</div>-->
+<!-- /.card-header -->
+<!--<div class="card-body">
+            @await Component.InvokeAsync("BarChart", new { data = Model.Query1, title = "REPORT ANALYSIS" })
+        </div>
+
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+            </h3>
+
+            <div class="card-tools d-inline">
+
+                <button type="button" class="btn btn-primary btn-sm d-inline" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>-->
+<!-- Dropdown button -->
+<!--<div class="btn-group d-inline">
+    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort By
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">By Day</a>
+        <a class="dropdown-item" href="#">By Week</a>
+        <a class="dropdown-item" href="#">By Month</a>
+        <a class="dropdown-item" href="#">By Year</a>-->
+<!-- Add more options as needed -->
+<!--</div>
+        </div>
+
+    </div>
+</div>-->
+<!-- /.card-header -->
+<!--<div class="card-body">
+                @await Component.InvokeAsync("PieChart", new { data = Model.Query2, title = "CLIENT REQUEST ANALYSIS" })
+            </div>
+
+        </div>
+    </div>
+</div>-->
+
+
+
+
+@section Scripts {
+
+
+}

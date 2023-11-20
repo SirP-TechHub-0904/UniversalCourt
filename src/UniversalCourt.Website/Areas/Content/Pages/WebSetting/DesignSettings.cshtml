@@ -1,0 +1,100 @@
+﻿@page
+@model UniversalCourt.Website.Areas.Content.Pages.WebSetting.DesignSettingsModel
+@{
+}
+<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title">SUB UPDATE SETTINGS</h3>
+
+    </div>
+    <!-- /.card-header -->
+    <form method="post">
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class=" ">CONFIGURATION SETTINGS</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="todo-list" data-widget="todo-list">
+
+
+                                <li>
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="DataConfig.DashboardCSS"></label><br />
+
+                                        <textarea asp-for="DataConfig.DashboardCSS" class="form-control "></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="DataConfig.LayoutCSS"></label><br />
+
+                                        <textarea asp-for="DataConfig.LayoutCSS" class="form-control "></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="DataConfig.LoginCSS"></label><br />
+
+                                        <textarea asp-for="DataConfig.LoginCSS" class="form-control "></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="DataConfig.Configuration"></label><br />
+
+                                        <textarea asp-for="DataConfig.Configuration" class="form-control "></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="DataConfig.LayoutJavaScript"></label><br />
+
+                                        <textarea asp-for="DataConfig.LayoutJavaScript" class="form-control "></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="control-label" asp-for="DataConfig.LiveConfiguration"></label><br />
+
+                                        <textarea asp-for="DataConfig.LiveConfiguration" class="form-control "></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" asp-for="DataConfig.RedirectTohttpswww" /> @Html.DisplayNameFor(model => model.DataConfig.RedirectTohttpswww)
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" asp-for="DataConfig.RedirectTohttps" /> @Html.DisplayNameFor(model => model.DataConfig.RedirectTohttps)
+                                        </label>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-footer">
+                        <input type="submit" value="Update" class="btn btn-primary" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</div>

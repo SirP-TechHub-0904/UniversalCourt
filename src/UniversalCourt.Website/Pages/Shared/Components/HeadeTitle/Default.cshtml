@@ -1,0 +1,11 @@
+﻿@model UniversalCourt.Domain.Models.SuperSetting
+
+@{
+    string title = ViewData["Title"]?.ToString();
+    string uppercaseTitle = title?.ToUpper();
+}
+
+ 
+
+<title id="page-title-j">@uppercaseTitle | DASHBOARD | @Model.CompanyName</title>
+<link rel="shortcut icon" href="@Model.CompanyIconUrl" type="image/x-icon" />

@@ -1,0 +1,801 @@
+﻿@page
+@model UniversalCourt.Website.Areas.Management.Pages.V3.IndexModel
+
+@{
+    ViewData["Title"] = "JSSL SETTINGS ";
+}
+<div class="card card-default">
+    <div class="card-header">
+        <h3 class="card-title">DETAILS SUPER SETTINGS</h3>
+
+    </div>
+    <!-- /.card-header -->
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <dl class="row">
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.StatisticsDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.StatisticsDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ChartsDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ChartsDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ProjectsDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ProjectsDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CommunicationDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.CommunicationDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.UsersDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.UsersDashboard)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.FinanceDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.FinanceDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.OrderDashboard)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.OrderDashboard)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateProject)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateProject)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateUserManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateUserManagement)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateUser)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateUser)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateRoles)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateRoles)
+                    </dd>
+
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateAttendance)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateAttendance)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateReport)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateReport)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateTask)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateTask)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateTrainings)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateTrainings)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateSalaries)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateSalaries)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateJobReferrals)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateJobReferrals)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateFinanceManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateFinanceManagement)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivatePaymentOnFinanceManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivatePaymentOnFinanceManagement)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateBudgetOnFinanceManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateBudgetOnFinanceManagement)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateExpensesOnFinanceManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateExpensesOnFinanceManagement)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateAccountsOnFinanceManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateAccountsOnFinanceManagement)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateReportOnFinanceManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateReportOnFinanceManagement)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateProposalManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateProposalManagement)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateReportAndAnalysis)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateReportAndAnalysis)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateUserReportAndAnalysis)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateUserReportAndAnalysis)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateVisitorsReportAndAnalysis)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateVisitorsReportAndAnalysis)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateProjectReportAndAnalysis)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateProjectReportAndAnalysis)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateCommunicationReportAndAnalysis)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateCommunicationReportAndAnalysis)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateContentReportAndAnalysis)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateContentReportAndAnalysis)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateContentManagement)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateContentManagement)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivatePagesContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivatePagesContent)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateBlogContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateBlogContent)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateProductContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateProductContent)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateFaqContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateFaqContent)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateTestimonyContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateTestimonyContent)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateSliderContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateSliderContent)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateContactInformationContent)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateContactInformationContent)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateSiteMap)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateSiteMap)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateCommnunicationTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateCommnunicationTools)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateForumCommnunicationTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateForumCommnunicationTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateChatCommnunicationTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateChatCommnunicationTools)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateNoticeBoardCommnunicationTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateNoticeBoardCommnunicationTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateContactUsCommnunicationTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateContactUsCommnunicationTools)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateManagementTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateManagementTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateSmsTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateSmsTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateEmailTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateEmailTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateNewsletterTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateNewsletterTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateBirthdayTools)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateBirthdayTools)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateSettings)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateSettings)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateOrder)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateOrder)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateOfficeActivity)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateOfficeActivity)
+                    </dd>
+
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateLogin)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateLogin)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateLoginInMenu)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateLoginInMenu)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.TemplateLayoutKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.TemplateLayoutKey)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.LoginTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.LoginTemplateKey)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ColorTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ColorTemplateKey)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.SliderTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.SliderTemplateKey)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ProductTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ProductTemplateKey)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.BlogTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.BlogTemplateKey)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ReloaderTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ReloaderTemplateKey)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.PageHeaderTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.PageHeaderTemplateKey)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.FooterTemplateKey)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.FooterTemplateKey)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CompanyName)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.CompanyName)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.WebsiteTitle)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.WebsiteTitle)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CompanyDescription)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.CompanyDescription)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CompanyWebsiteLink)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.CompanyWebsiteLink)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.DashboardTitle)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.DashboardTitle)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CompanyLogoUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @if (!String.IsNullOrEmpty(Model.SuperSetting.CompanyLogoUrl))
+                        {
+                            <img src="@Model.SuperSetting.CompanyLogoUrl" class="img-fluid" style="max-height:150px;" />
+
+                        }
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CompanyWhiteLogoUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @if (!String.IsNullOrEmpty(Model.SuperSetting.CompanyWhiteLogoUrl))
+                        {
+                            <img src="@Model.SuperSetting.CompanyWhiteLogoUrl" class="img-fluid" style="max-height:150px;" />
+
+                        }
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.CompanyIconUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @if (!String.IsNullOrEmpty(Model.SuperSetting.CompanyIconUrl))
+                        {
+                            <img src="@Model.SuperSetting.CompanyIconUrl" class="img-fluid" style="max-height:150px;" />
+
+                        }
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ReloaderIconUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @if (!String.IsNullOrEmpty(Model.SuperSetting.ReloaderIconUrl))
+                        {
+                            <img src="@Model.SuperSetting.ReloaderIconUrl" class="img-fluid" style="max-height:150px;" />
+
+                        }
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.JustWebsite)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.JustWebsite)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateOnlyAuthorizedDevice)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateOnlyAuthorizedDevice)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateSMS)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateSMS)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.EmailTemplate)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.SuperSetting.EmailTemplate)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.SMSTemplate)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.SuperSetting.SMSTemplate)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.LoginTitle)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.LoginTitle)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.LoginNoteTitle)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.LoginNoteTitle)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.LoginNote)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.LoginNote)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.LoginNoteFooter)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.LoginNoteFooter)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.UseNormalLogoInLogin)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.UseNormalLogoInLogin)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.UseWhiteLogoInLogin)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.UseWhiteLogoInLogin)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.LoginBackgroundImageUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @if (!String.IsNullOrEmpty(Model.SuperSetting.LoginBackgroundImageUrl))
+                        {
+                            <img src="@Model.SuperSetting.LoginBackgroundImageUrl" class="img-fluid" style="max-height:150px;" />
+
+                        }
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ActivateComingSoon)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ActivateComingSoon)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ProductTitle)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ProductTitle)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ProductTitleHome)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.ProductTitleHome)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.DashboardCSS)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.DashboardCSS)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.LayoutCSS)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.LayoutCSS)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.LoginCSS)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.LoginCSS)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.Configuration)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.Configuration)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.RedirectTohttps)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.RedirectTohttps)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.RedirectTohttpswww)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.RedirectTohttpswww)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DataConfig.LiveConfiguration)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.DataConfig.LiveConfiguration)
+                    </dd>
+
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.ShowMadeByJuray)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.Raw(Model.SuperSetting.ShowMadeByJuray)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.SpecialMenuButtonActivate)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.SpecialMenuButtonActivate)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.SpecialMenuButtonLink)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.SpecialMenuButtonLink)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.SuperSetting.SpecialMenuButtonText)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.SuperSetting.SpecialMenuButtonText)
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <a class="dropdown-item" asp-page="./Edit" asp-route-id="@Model.SuperSetting.Id">Edit</a>
+
+        </div>
+    </div>
+</div>

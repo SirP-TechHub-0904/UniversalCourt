@@ -1,0 +1,23 @@
+﻿@model ICollection<UniversalCourt.Domain.Models.PageSection>
+@using System.Text.RegularExpressions;
+
+@{
+    Regex regex = new Regex("[^a-zA-Z0-9]");
+    int listcountforhome = 500;
+    // Get the URL for the home page
+    string homeUrl = Url.Page("/Index");
+
+    // Get the current URL
+    string currentUrl = Context.Request.Path;
+
+    // Check if the current URL is the home page URL
+    bool isHomePage = currentUrl.Equals(homeUrl, StringComparison.OrdinalIgnoreCase);
+}
+@foreach (var item in Model)
+{
+
+ }
+        @section Scripts {
+
+
+        }
