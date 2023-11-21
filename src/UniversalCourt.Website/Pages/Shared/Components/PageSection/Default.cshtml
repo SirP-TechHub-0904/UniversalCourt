@@ -10255,7 +10255,7 @@ else if (ViewBag.themedata == "Layout8888")
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="section-title mb-4">
-                                        <h2 class="title">@item.Title></h2>
+                                        <h2 class="title">@item.Title</h2>
                                     </div>
                                     <p class="line-h-3 text-white">@item.Description</p>
                                     <div class="row">
@@ -10263,10 +10263,10 @@ else if (ViewBag.themedata == "Layout8888")
                                             @foreach (var list in item.PageSectionLists)
                                             {
                                                 <div class="ht-progress-bar">
-                                                    <h4>Contracting</h4>
+                                                    <h4>@list.Title</h4>
                                                     <div class="progress" data-value="88">
                                                         <div class="progress-bar progress-bar-striped progress-bar-animated">
-                                                            <div class="progress-parcent">@list.Title</div>
+                                                            <div class="progress-parcent">@list.MiniTitle</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -10279,9 +10279,10 @@ else if (ViewBag.themedata == "Layout8888")
                     </div>
                 </div>
             </section>
+
         }
 
-         
+
         else if (item.TemplateKey == "20")
         {
             <section class="overflow-hidden @item.CustomClass">
